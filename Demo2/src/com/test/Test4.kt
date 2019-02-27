@@ -3,8 +3,9 @@ package com.test
 
 class Foo {
     lateinit var   lateinitVar: String
-
+ var name="alex"
     fun initializationLogic() {
+        println(this::name)
         //sampleStart
         println("isInitialized before assignment: " + this::lateinitVar.isInitialized)
         lateinitVar = "value"
